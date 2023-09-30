@@ -86,7 +86,7 @@ public class EventsManager {
      */
     public double calculateAvgPotentialOrderSize(long currentTimeMillis, long abandonmentTimeThreshold) {
         logger.info("Current time in milliseconds: " + currentTimeMillis);
-        logger.info("Threshold time in milliseconds: " + abandonmentTimeThreshold);
+        logger.info("Threshold time in minutes: " + abandonmentTimeThreshold);
 
         long thresholdTimeMillis = Instant.ofEpochMilli(currentTimeMillis)
                 .minus(Duration.ofMinutes(abandonmentTimeThreshold)).toEpochMilli();

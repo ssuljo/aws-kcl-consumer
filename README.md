@@ -5,7 +5,7 @@ This demo project showcases the process of analyzing user shopping carts in an e
 
 ## Features
 - **Cart Abandonment Detection:** The application consumes information about user shopping carts, and detects when a cart is abandoned. It calculates the time of abandonment based on predefined threshold.
-- **Notification to Users:** When a cart is detected as abandoned, the application can be sent to the user as a reminder to complete the purchase, helping to recover potentially lost sales.
+- **Notification to Users:** When a cart is detected as abandoned, the notification can be sent to the user as a reminder to complete the purchase, helping to recover potentially lost sales.
 - **Average Potential Order Size:** The application analyzes the cart abandonment events over specified time intervals (e.g., 30-second windows) and calculates the average potential order size for the batch of abandoned carts. This insight can assist in understanding customer behavior and optimizing marketing strategies.
 - **Scalability:** Built using the Kinesis Client Library, the application can easily scale to handle large volumes of cart abandonment events, making it suitable for use in real-world e-commerce platforms.
 - **Logging:** The application utilizes log4j for robust logging, allowing you to monitor its performance and troubleshoot any issues effectively.
